@@ -1,0 +1,107 @@
+/** Root Variables
+ ---------------------------------------------------------*/
+:root {
+    --blue: rgb(85,114,214); /* title text and price */
+    --grey: rgb(167,167,167); /* primary text */
+    --light-grey: rgb(243,243,243); /* hover background */
+    --white: rgb(255,255,255);
+    --blue-grey: rgb(133,165,212); /* background */
+}
+
+/** Global Reset
+ ---------------------------------------------------------*/
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    background-color: var(--blue-grey);
+    color: var(--white);
+    line-height: 1.5;
+    font-size: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** Primary Price Compare
+ ---------------------------------------------------------*/
+.wrapper {
+    max-height: 40rem;
+    background-color: var(--white);
+    padding: 1.5rem 2.25rem;
+    border-radius: .5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ .card {
+    background-color: var(--white);
+    color: var(--blue);
+    min-height: 35rem;
+    max-width: 35rem;
+    border-radius: .5rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.card:hover {
+    background-color: var(--light-grey);
+}
+
+.card_icon {
+    padding-bottom: 1rem;
+}
+
+.card_icon-svg {
+    height: 10rem;
+    width: 7rem;
+}
+
+.card_title {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 4;
+    font-weight: 600;
+}
+
+.card_description {
+    padding: 0rem 5rem;
+    text-align: center;
+    color: var(--grey);
+}
+
+.card_fee-period {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.card_fee-price {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
