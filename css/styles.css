@@ -76,6 +76,10 @@ body {
     padding-bottom: 1rem;
 }
 
+.extra_bottom {
+    padding-bottom: 2.4rem;
+}
+
 .card_icon-svg {
     height: 10rem;
     width: 7rem;
